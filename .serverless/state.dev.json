@@ -38,9 +38,9 @@
         "detectedFrameworkVersion": "3.34.0"
       },
       "outputs": {
-        "apiGatewayRestApiId": "n5yf9evdv8",
-        "apiGatewayRestApiRootResourceId": "ewbklt4xlh",
-        "ServerlessDeploymentBucketName": "shared-gateway-dev-serverlessdeploymentbucket-pw47laqmh1j0"
+        "apiGatewayRestApiId": "2yu42yjkga",
+        "apiGatewayRestApiRootResourceId": "ecgeo2vxfk",
+        "ServerlessDeploymentBucketName": "shared-gateway-dev-serverlessdeploymentbucket-1t3ct3hjuunx1"
       }
     }
   }

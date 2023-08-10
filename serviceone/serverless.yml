@@ -14,10 +14,3 @@ functions:
       - http:
           path: serviceone/list
           method: get
-
-resources:
-  Resources:
-    SharedGatewayStackReference:
-      Type: AWS::CloudFormation::Stack
-      Properties:
-        TemplateURL: ../gateway/serverless.yml
