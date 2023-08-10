@@ -1,6 +1,6 @@
 org: sidd34po
 app: lamda
-service: DMLS
+service: serviceone
 frameworkVersion: '3'
 
 provider:
