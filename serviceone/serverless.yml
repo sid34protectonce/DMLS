@@ -6,11 +6,6 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs18.x
-  apiGateway:
-    restApiId:
-      "SharedGW-restApiId"
-    restApiRootResourceId:
-      "SharedGW-rootResourceId"
 
 functions:
   function1:
@@ -19,3 +14,10 @@ functions:
       - http:
           path: serviceone/list
           method: get
+
+resources:
+  Resources:
+    SharedGatewayStackReference:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: ../gateway/serverless.yml

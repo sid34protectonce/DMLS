@@ -1,80 +1,14 @@
 
 Deploying to stage dev
-serviceone › waiting
-servicetwo › waiting
-servicethree › waiting
 shared-gateway › waiting
-serviceone › deploying
-servicetwo › deploying
-servicethree › deploying
+serviceone › waiting
 shared-gateway › deploying
-serviceone › Running "serverless deploy --stage dev"
-servicetwo › Running "serverless deploy --stage dev"
-servicethree › Running "serverless deploy --stage dev"
+serviceone › deploying
 shared-gateway › Running "serverless deploy --stage dev"
-servicetwo › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
-servicethree › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
-servicetwo › Deploying servicetwo to stage dev (us-east-1)
+serviceone › Running "serverless deploy --stage dev"
+shared-gateway › Running "serverless" from node_modules
+serviceone › Running "serverless" from node_modules
 serviceone › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
-servicethree › Deploying servicethree to stage dev (us-east-1)
-shared-gateway › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
 serviceone › Deploying serviceone to stage dev (us-east-1)
-shared-gateway › Deploying shared-gateway to stage dev (us-east-1)
-servicetwo › × Stack servicetwo-dev failed to deploy (17s)
-servicetwo › Environment: linux, node 20.5.0, framework 3.34.0, plugin 6.2.3, SDK 4.3.2
-servicetwo › Credentials: Local, "default" profile
-servicetwo › Docs:        docs.serverless.com
-servicetwo › Support:     forum.serverless.com
-servicetwo › Bugs:        github.com/serverless/serverless/issues
-servicetwo › Error:
-servicetwo › Stack:arn:aws:cloudformation:us-east-1:702810656113:stack/servicetwo-dev/abef12e0-374f-11ee-81ec-0a4dcb56b20f is in DELETE_FAILED state and can not be updated.
-serviceone › × Stack serviceone-dev failed to deploy (19s)
-servicetwo › error
-servicetwo › Error:
-servicetwo › Stack:arn:aws:cloudformation:us-east-1:702810656113:stack/servicetwo-dev/abef12e0-374f-11ee-81ec-0a4dcb56b20f is in DELETE_FAILED state and can not be updated.
-servicetwo › 
-serviceone › Environment: linux, node 20.5.0, framework 3.34.0, plugin 6.2.3, SDK 4.3.2
-serviceone › Credentials: Local, "default" profile
-serviceone › Docs:        docs.serverless.com
-serviceone › Support:     forum.serverless.com
-serviceone › Bugs:        github.com/serverless/serverless/issues
-serviceone › Error:
-serviceone › Stack:arn:aws:cloudformation:us-east-1:702810656113:stack/serviceone-dev/abbf2940-374f-11ee-a81f-0ebc1219f843 is in DELETE_FAILED state and can not be updated.
-serviceone › error
-serviceone › Error:
-serviceone › Stack:arn:aws:cloudformation:us-east-1:702810656113:stack/serviceone-dev/abbf2940-374f-11ee-a81f-0ebc1219f843 is in DELETE_FAILED state and can not be updated.
-serviceone › 
-servicethree › × Stack servicethree-dev failed to deploy (70s)
-servicethree › Environment: linux, node 20.5.0, framework 3.34.0, plugin 6.2.3, SDK 4.3.2
-servicethree › Credentials: Local, "default" profile
-servicethree › Docs:        docs.serverless.com
-servicethree › Support:     forum.serverless.com
-servicethree › Bugs:        github.com/serverless/serverless/issues
-servicethree › Error:
-servicethree › CREATE_FAILED: ApiGatewayResourceServicethree (AWS::ApiGateway::Resource)
-servicethree › Resource handler returned message: "Invalid API identifier specified 702810656113:SharedGW-restApiId (Service: ApiGateway, Status Code: 404, Request ID: 74bb9900-a3a4-4a3a-a868-b29c6bb857ff)" (RequestToken: 32873212-ebad-38b0-8b66-af7e23670cb6, HandlerErrorCode: NotFound)
-servicethree › 
-servicethree › View the full error: https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aus-east-1%3A702810656113%3Astack%2Fservicethree-dev%2Fc41cebe0-375d-11ee-927a-124a6214a9fb
-servicethree › error
-servicethree › Error:
-servicethree › CREATE_FAILED: ApiGatewayResourceServicethree (AWS::ApiGateway::Resource)
-servicethree › Resource handler returned message: "Invalid API identifier specified 702810656113:SharedGW-restApiId (Service: ApiGateway, Status Code: 404, Request ID: 74bb9900-a3a4-4a3a-a868-b29c6bb857ff)" (RequestToken: 32873212-ebad-38b0-8b66-af7e23670cb6, HandlerErrorCode: NotFound)
-servicethree › 
-servicethree › View the full error: https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aus-east-1%3A702810656113%3Astack%2Fservicethree-dev%2Fc41cebe0-375d-11ee-927a-124a6214a9fb
-servicethree › 
-shared-gateway › ✔ Service deployed to stack shared-gateway-dev (77s)
-shared-gateway › dashboard: https://app.serverless.com/sidd34po/apps/lamda/shared-gateway/dev/us-east-1
-shared-gateway › Running "serverless info --verbose --stage dev"
-shared-gateway › To ensure safe major version upgrades ensure "frameworkVersion" setting in service configuration (recommended setup: "frameworkVersion: ^3.34.0")
 shared-gateway › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
-shared-gateway › service: shared-gateway
-shared-gateway › stage: dev
-shared-gateway › region: us-east-1
-shared-gateway › stack: shared-gateway-dev
-shared-gateway › dashboard: https://app.serverless.com/sidd34po/apps/lamda/shared-gateway/dev/us-east-1
-shared-gateway › Stack Outputs:
-shared-gateway ›   apiGatewayRestApiId: n8mmdcgfx3
-shared-gateway ›   apiGatewayRestApiRootResourceId: dlcd2l78hd
-shared-gateway ›   ServerlessDeploymentBucketName: shared-gateway-dev-serverlessdeploymentbucket-usjbsfaotni5
-shared-gateway › deployed
-
+shared-gateway › Deploying shared-gateway to stage dev (us-east-1)

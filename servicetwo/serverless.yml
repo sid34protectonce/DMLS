@@ -8,9 +8,9 @@ provider:
   runtime: nodejs18.x
   apiGateway:
     restApiId:
-      "SharedGW-restApiId"
+      ${param:SharedGW-restApiId}
     restApiRootResourceId:
-      "SharedGW-rootResourceId"
+      ${param:SharedGW-rootResourceId}
 
 functions:
   function1:
