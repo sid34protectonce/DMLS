@@ -1,0 +1,77 @@
+
+Deploying to stage dev
+serviceone › waiting
+servicetwo › waiting
+servicethree › waiting
+serviceone › deploying
+servicetwo › deploying
+servicethree › deploying
+serviceone › Running "serverless deploy --stage dev"
+servicetwo › Running "serverless deploy --stage dev"
+servicethree › Running "serverless deploy --stage dev"
+servicethree › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
+serviceone › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
+servicetwo › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
+servicethree › Deploying servicethree to stage dev (us-east-1)
+serviceone › Deploying serviceone to stage dev (us-east-1)
+servicetwo › Deploying servicetwo to stage dev (us-east-1)
+servicethree › (node:33036) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 close listeners added to [TLSSocket]. Use emitter.setMaxListeners() to increase limit
+servicethree › (Use `node --trace-warnings ...` to show where the warning was created)
+servicetwo › (node:33035) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 close listeners added to [TLSSocket]. Use emitter.setMaxListeners() to increase limit
+servicetwo › (Use `node --trace-warnings ...` to show where the warning was created)
+servicethree › ✔ Service deployed to stack servicethree-dev (110s)
+servicethree › dashboard: https://app.serverless.com/sidd34po/apps/lamda/servicethree/dev/us-east-1
+servicethree › functions:
+servicethree ›   function1: servicethree-dev-function1 (224 kB)
+serviceone › ✔ Service deployed to stack serviceone-dev (111s)
+serviceone › dashboard: https://app.serverless.com/sidd34po/apps/lamda/serviceone/dev/us-east-1
+serviceone › functions:
+serviceone ›   function1: serviceone-dev-function1 (224 kB)
+servicethree › Running "serverless info --verbose --stage dev"
+serviceone › Running "serverless info --verbose --stage dev"
+servicetwo › ✔ Service deployed to stack servicetwo-dev (112s)
+servicetwo › dashboard: https://app.serverless.com/sidd34po/apps/lamda/servicetwo/dev/us-east-1
+servicetwo › functions:
+servicetwo ›   function1: servicetwo-dev-function1 (224 kB)
+servicetwo › Running "serverless info --verbose --stage dev"
+servicethree › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
+serviceone › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
+servicethree › service: servicethree
+servicethree › stage: dev
+servicethree › region: us-east-1
+servicethree › stack: servicethree-dev
+servicethree › dashboard: https://app.serverless.com/sidd34po/apps/lamda/servicethree/dev/us-east-1
+servicethree › functions:
+servicethree ›   function1: servicethree-dev-function1
+servicethree › 
+servicethree › Stack Outputs:
+servicethree ›   EnterpriseLogAccessIamRole: arn:aws:iam::702810656113:role/servicethree-dev-EnterpriseLogAccessIamRole-1N77SQ4B3I0V0
+servicethree ›   Function1LambdaFunctionQualifiedArn: arn:aws:lambda:us-east-1:702810656113:function:servicethree-dev-function1:1
+servicethree ›   ServerlessDeploymentBucketName: servicethree-dev-serverlessdeploymentbucket-8b9uyju4uwvx
+servicetwo › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
+servicethree › deployed
+serviceone › service: serviceone
+serviceone › stage: dev
+serviceone › region: us-east-1
+serviceone › stack: serviceone-dev
+serviceone › dashboard: https://app.serverless.com/sidd34po/apps/lamda/serviceone/dev/us-east-1
+serviceone › functions:
+serviceone ›   function1: serviceone-dev-function1
+serviceone › Stack Outputs:
+serviceone ›   EnterpriseLogAccessIamRole: arn:aws:iam::702810656113:role/serviceone-dev-EnterpriseLogAccessIamRole-GJOS2VP8NXVL
+serviceone ›   Function1LambdaFunctionQualifiedArn: arn:aws:lambda:us-east-1:702810656113:function:serviceone-dev-function1:1
+serviceone ›   ServerlessDeploymentBucketName: serviceone-dev-serverlessdeploymentbucket-wj69azpz6kmo
+serviceone › deployed
+servicetwo › service: servicetwo
+servicetwo › stage: dev
+servicetwo › region: us-east-1
+servicetwo › stack: servicetwo-dev
+servicetwo › dashboard: https://app.serverless.com/sidd34po/apps/lamda/servicetwo/dev/us-east-1
+servicetwo › functions:
+servicetwo ›   function1: servicetwo-dev-function1
+servicetwo › 
+servicetwo › Stack Outputs:
+servicetwo ›   EnterpriseLogAccessIamRole: arn:aws:iam::702810656113:role/servicetwo-dev-EnterpriseLogAccessIamRole-G4QUWFOTU1PD
+servicetwo ›   Function1LambdaFunctionQualifiedArn: arn:aws:lambda:us-east-1:702810656113:function:servicetwo-dev-function1:1
+servicetwo ›   ServerlessDeploymentBucketName: servicetwo-dev-serverlessdeploymentbucket-1iywjxtb35694
+servicetwo › deployed

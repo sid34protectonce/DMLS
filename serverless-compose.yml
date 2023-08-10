@@ -1,0 +1,13 @@
+services:
+
+  serviceone:
+    path: serviceone
+
+  servicetwo:
+    path: servicetwo
+
+  servicethree:
+    path: servicethree
+
+  shared-gateway:
+    path: gateway

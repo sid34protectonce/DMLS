@@ -1,0 +1,37 @@
+{
+  "service": {
+    "id": "2s7f44p"
+  },
+  "components": {
+    "servicethree": {
+      "state": {
+        "detectedFrameworkVersion": "3.34.0"
+      },
+      "outputs": {
+        "EnterpriseLogAccessIamRole": "arn:aws:iam::702810656113:role/servicethree-dev-EnterpriseLogAccessIamRole-1N77SQ4B3I0V0",
+        "Function1LambdaFunctionQualifiedArn": "arn:aws:lambda:us-east-1:702810656113:function:servicethree-dev-function1:1",
+        "ServerlessDeploymentBucketName": "servicethree-dev-serverlessdeploymentbucket-8b9uyju4uwvx"
+      }
+    },
+    "servicetwo": {
+      "state": {
+        "detectedFrameworkVersion": "3.34.0"
+      },
+      "outputs": {
+        "EnterpriseLogAccessIamRole": "arn:aws:iam::702810656113:role/servicetwo-dev-EnterpriseLogAccessIamRole-G4QUWFOTU1PD",
+        "Function1LambdaFunctionQualifiedArn": "arn:aws:lambda:us-east-1:702810656113:function:servicetwo-dev-function1:1",
+        "ServerlessDeploymentBucketName": "servicetwo-dev-serverlessdeploymentbucket-1iywjxtb35694"
+      }
+    },
+    "serviceone": {
+      "state": {
+        "detectedFrameworkVersion": "3.34.0"
+      },
+      "outputs": {
+        "EnterpriseLogAccessIamRole": "arn:aws:iam::702810656113:role/serviceone-dev-EnterpriseLogAccessIamRole-GJOS2VP8NXVL",
+        "Function1LambdaFunctionQualifiedArn": "arn:aws:lambda:us-east-1:702810656113:function:serviceone-dev-function1:1",
+        "ServerlessDeploymentBucketName": "serviceone-dev-serverlessdeploymentbucket-wj69azpz6kmo"
+      }
+    }
+  }
+}

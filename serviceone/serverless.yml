@@ -6,7 +6,16 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs18.x
+  apiGateway:
+    restApiId:
+      "SharedGW-restApiId"
+    restApiRootResourceId:
+      "SharedGW-rootResourceId"
 
 functions:
   function1:
     handler: index.handler
+    events:
+      - http:
+          path: serviceone/list
+          method: get
