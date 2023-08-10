@@ -1,3 +1,5 @@
+org: sidd34po
+app: lamda
 service: shared-gateway
 provider:
   name: aws
