@@ -10,8 +10,8 @@ provider:
   name: aws
   runtime: nodejs18.x
   apiGateway:
-    restApiId: ${param:apiRootResourceId}
-    restApiRootResourceId: ${param:apiGatewayRestApiId}
+    restApiId: ${self:custom.sharedGWRestApiId}
+    restApiRootResourceId: ${self:custom.sharedGWRootResourceId}
 
 functions:
   function1:
@@ -20,3 +20,9 @@ functions:
       - http:
           path: serviceone/list
           method: get
+
+custom:
+  sharedGWRestApiId:
+    'Fn::ImportValue': SharedGW-restApiId
+  sharedGWRootResourceId:
+    'Fn::ImportValue': SharedGW-rootResourceId

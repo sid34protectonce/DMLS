@@ -1,19 +1,52 @@
-Environment: linux, node 20.5.0, compose 1.3.0
-Docs:        slss.io/docs-compose
-Bugs:        github.com/serverless/compose/issues
 
-Error:
-The service "sls" does not exist. It is referenced by "serviceone" in expression "${sls}".
-ServerlessError: The service "sls" does not exist. It is referenced by "serviceone" in expression "${sls}".
-    at Object.<anonymous> (/home/ue/protectonce/DMLS/node_modules/@serverless/compose/src/ComponentsService.js:161:19)
-    at Object.<anonymous> (/home/ue/protectonce/DMLS/node_modules/traverse/index.js:245:13)
-    at walker (/home/ue/protectonce/DMLS/node_modules/traverse/index.js:150:16)
-    at /home/ue/protectonce/DMLS/node_modules/traverse/index.js:171:17
-    at Array.forEach (<anonymous>)
-    at forEach (/home/ue/protectonce/DMLS/node_modules/traverse/index.js:19:30)
-    at walker (/home/ue/protectonce/DMLS/node_modules/traverse/index.js:166:4)
-    at /home/ue/protectonce/DMLS/node_modules/traverse/index.js:171:17
-    at Array.forEach (<anonymous>)
-    at forEach (/home/ue/protectonce/DMLS/node_modules/traverse/index.js:19:30)
-
-Verbose logs are available in ".serverless/compose.log"
+Deploying to stage dev
+shared-gateway › waiting
+serviceone › waiting
+shared-gateway › deploying
+shared-gateway › Running "serverless deploy --stage dev"
+shared-gateway › Running "serverless" from node_modules
+shared-gateway › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
+shared-gateway › Deploying shared-gateway to stage dev (us-east-1)
+shared-gateway › ✔ Service deployed to stack shared-gateway-dev (78s)
+shared-gateway › dashboard: https://app.serverless.com/sidd34po/apps/lamda/shared-gateway/dev/us-east-1
+shared-gateway › Running "serverless info --verbose --stage dev"
+shared-gateway › Running "serverless" from node_modules
+shared-gateway › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
+shared-gateway › service: shared-gateway
+shared-gateway › stage: dev
+shared-gateway › region: us-east-1
+shared-gateway › stack: shared-gateway-dev
+shared-gateway › dashboard: https://app.serverless.com/sidd34po/apps/lamda/shared-gateway/dev/us-east-1
+shared-gateway › 
+shared-gateway › Stack Outputs:
+shared-gateway ›   apiGatewayRestApiId: aly5yhjl1b
+shared-gateway ›   apiGatewayRestApiRootResourceId: h7djg9fq56
+shared-gateway ›   ServerlessDeploymentBucketName: shared-gateway-dev-serverlessdeploymentbucket-1jdiaid9o5etg
+shared-gateway › deployed
+serviceone › deploying
+serviceone › Running "serverless deploy --stage dev"
+serviceone › Running "serverless" from node_modules
+serviceone › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
+serviceone › Deploying serviceone to stage dev (us-east-1)
+serviceone › ✔ Service deployed to stack serviceone-dev (112s)
+serviceone › dashboard: https://app.serverless.com/sidd34po/apps/lamda/serviceone/dev/us-east-1
+serviceone › endpoint: GET - https://aly5yhjl1b.execute-api.us-east-1.amazonaws.com/dev/serviceone/list
+serviceone › functions:
+serviceone ›   function1: serviceone-dev-function1 (224 kB)
+serviceone › Running "serverless info --verbose --stage dev"
+serviceone › Running "serverless" from node_modules
+serviceone › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
+serviceone › service: serviceone
+serviceone › stage: dev
+serviceone › region: us-east-1
+serviceone › stack: serviceone-dev
+serviceone › dashboard: https://app.serverless.com/sidd34po/apps/lamda/serviceone/dev/us-east-1
+serviceone › endpoint: GET - https://aly5yhjl1b.execute-api.us-east-1.amazonaws.com/dev/serviceone/list
+serviceone › functions:
+serviceone ›   function1: serviceone-dev-function1
+serviceone › Stack Outputs:
+serviceone ›   EnterpriseLogAccessIamRole: arn:aws:iam::702810656113:role/serviceone-dev-EnterpriseLogAccessIamRole-NI95Z3NEU308
+serviceone ›   Function1LambdaFunctionQualifiedArn: arn:aws:lambda:us-east-1:702810656113:function:serviceone-dev-function1:2
+serviceone ›   ServiceEndpoint: https://aly5yhjl1b.execute-api.us-east-1.amazonaws.com/dev
+serviceone ›   ServerlessDeploymentBucketName: serviceone-dev-serverlessdeploymentbucket-6556mrd1cfji
+serviceone › deployed

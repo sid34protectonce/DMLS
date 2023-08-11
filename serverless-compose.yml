@@ -6,6 +6,3 @@ services:
   serviceone:
     path: serviceone
     dependsOn: shared-gateway
-    params:
-      apiRootResourceId: ${shared-gateway.apiGatewayRestApiRootResourceId}
-      apiRestApiID: ${shared-gateway.apiGatewayRestApiId}

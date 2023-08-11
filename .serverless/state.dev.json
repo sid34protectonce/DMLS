@@ -1,26 +1,16 @@
 {
   "service": {
-    "id": "2s7f44p"
+    "id": "ka0pn5o"
   },
   "components": {
-    "servicethree": {
+    "shared-gateway": {
       "state": {
         "detectedFrameworkVersion": "3.34.0"
       },
       "outputs": {
-        "EnterpriseLogAccessIamRole": "arn:aws:iam::702810656113:role/servicethree-dev-EnterpriseLogAccessIamRole-1N77SQ4B3I0V0",
-        "Function1LambdaFunctionQualifiedArn": "arn:aws:lambda:us-east-1:702810656113:function:servicethree-dev-function1:1",
-        "ServerlessDeploymentBucketName": "servicethree-dev-serverlessdeploymentbucket-8b9uyju4uwvx"
-      }
-    },
-    "servicetwo": {
-      "state": {
-        "detectedFrameworkVersion": "3.34.0"
-      },
-      "outputs": {
-        "EnterpriseLogAccessIamRole": "arn:aws:iam::702810656113:role/servicetwo-dev-EnterpriseLogAccessIamRole-G4QUWFOTU1PD",
-        "Function1LambdaFunctionQualifiedArn": "arn:aws:lambda:us-east-1:702810656113:function:servicetwo-dev-function1:1",
-        "ServerlessDeploymentBucketName": "servicetwo-dev-serverlessdeploymentbucket-1iywjxtb35694"
+        "apiGatewayRestApiId": "aly5yhjl1b",
+        "apiGatewayRestApiRootResourceId": "h7djg9fq56",
+        "ServerlessDeploymentBucketName": "shared-gateway-dev-serverlessdeploymentbucket-1jdiaid9o5etg"
       }
     },
     "serviceone": {
@@ -28,19 +18,10 @@
         "detectedFrameworkVersion": "3.34.0"
       },
       "outputs": {
-        "EnterpriseLogAccessIamRole": "arn:aws:iam::702810656113:role/serviceone-dev-EnterpriseLogAccessIamRole-GJOS2VP8NXVL",
-        "Function1LambdaFunctionQualifiedArn": "arn:aws:lambda:us-east-1:702810656113:function:serviceone-dev-function1:1",
-        "ServerlessDeploymentBucketName": "serviceone-dev-serverlessdeploymentbucket-wj69azpz6kmo"
-      }
-    },
-    "shared-gateway": {
-      "state": {
-        "detectedFrameworkVersion": "3.34.0"
-      },
-      "outputs": {
-        "apiGatewayRestApiId": "batult36ha",
-        "apiGatewayRestApiRootResourceId": "o10549p0b0",
-        "ServerlessDeploymentBucketName": "shared-gateway-dev-serverlessdeploymentbucket-17b5d5pvsv6nl"
+        "EnterpriseLogAccessIamRole": "arn:aws:iam::702810656113:role/serviceone-dev-EnterpriseLogAccessIamRole-NI95Z3NEU308",
+        "Function1LambdaFunctionQualifiedArn": "arn:aws:lambda:us-east-1:702810656113:function:serviceone-dev-function1:2",
+        "ServiceEndpoint": "https://aly5yhjl1b.execute-api.us-east-1.amazonaws.com/dev",
+        "ServerlessDeploymentBucketName": "serviceone-dev-serverlessdeploymentbucket-6556mrd1cfji"
       }
     }
   }
