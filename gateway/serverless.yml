@@ -1,3 +1,6 @@
+plugins:
+  - serverless-export-env
+
 org: sidd34po
 app: lamda
 service: shared-gateway

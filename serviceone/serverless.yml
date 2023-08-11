@@ -1,3 +1,6 @@
+plugins:
+  - serverless-export-env
+
 org: sidd34po
 app: lamda
 service: serviceone
@@ -6,6 +9,9 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs18.x
+  apiGateway:
+    restApiId: ${param:apiRootResourceId}
+    restApiRootResourceId: ${param:apiGatewayRestApiId}
 
 functions:
   function1:

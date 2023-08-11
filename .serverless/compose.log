@@ -1,49 +1,19 @@
+Environment: linux, node 20.5.0, compose 1.3.0
+Docs:        slss.io/docs-compose
+Bugs:        github.com/serverless/compose/issues
 
-Deploying to stage dev
-shared-gateway › waiting
-serviceone › waiting
-shared-gateway › deploying
-serviceone › deploying
-shared-gateway › Running "serverless deploy --stage dev"
-serviceone › Running "serverless deploy --stage dev"
-shared-gateway › Running "serverless" from node_modules
-serviceone › Running "serverless" from node_modules
-serviceone › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
-serviceone › Deploying serviceone to stage dev (us-east-1)
-shared-gateway › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
-shared-gateway › Deploying shared-gateway to stage dev (us-east-1)
-serviceone › × Stack serviceone-dev failed to deploy (73s)
-serviceone › Environment: linux, node 20.5.0, framework 3.34.0 (local) 3.34.0v (global), plugin 6.2.3, SDK 4.3.2
-serviceone › Credentials: Local, "default" profile
-serviceone › Docs:        docs.serverless.com
-serviceone › Support:     forum.serverless.com
-serviceone › Bugs:        github.com/serverless/serverless/issues
-serviceone › Error:
-serviceone › CREATE_FAILED: SharedGatewayStackReference (AWS::CloudFormation::Stack)
-serviceone › TemplateURL must be a supported URL.
-serviceone › 
-serviceone › View the full error: https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aus-east-1%3A702810656113%3Astack%2Fserviceone-dev%2Fb3517400-3782-11ee-bc87-0aa0d13b44b3
-serviceone › error
-serviceone › Error:
-serviceone › CREATE_FAILED: SharedGatewayStackReference (AWS::CloudFormation::Stack)
-serviceone › TemplateURL must be a supported URL.
-serviceone › 
-serviceone › View the full error: https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stack/detail?stackId=arn%3Aaws%3Acloudformation%3Aus-east-1%3A702810656113%3Astack%2Fserviceone-dev%2Fb3517400-3782-11ee-bc87-0aa0d13b44b3
-serviceone › 
-shared-gateway › ✔ Service deployed to stack shared-gateway-dev (77s)
-shared-gateway › dashboard: https://app.serverless.com/sidd34po/apps/lamda/shared-gateway/dev/us-east-1
-shared-gateway › Running "serverless info --verbose --stage dev"
-shared-gateway › Running "serverless" from node_modules
-shared-gateway › Using local credentials. Add provider credentials via dashboard: https://app.serverless.com//providers
-shared-gateway › service: shared-gateway
-shared-gateway › stage: dev
-shared-gateway › region: us-east-1
-shared-gateway › stack: shared-gateway-dev
-shared-gateway › dashboard: https://app.serverless.com/sidd34po/apps/lamda/shared-gateway/dev/us-east-1
-shared-gateway › 
-shared-gateway › Stack Outputs:
-shared-gateway ›   apiGatewayRestApiId: 2yu42yjkga
-shared-gateway ›   apiGatewayRestApiRootResourceId: ecgeo2vxfk
-shared-gateway ›   ServerlessDeploymentBucketName: shared-gateway-dev-serverlessdeploymentbucket-1t3ct3hjuunx1
-shared-gateway › deployed
+Error:
+The service "sls" does not exist. It is referenced by "serviceone" in expression "${sls}".
+ServerlessError: The service "sls" does not exist. It is referenced by "serviceone" in expression "${sls}".
+    at Object.<anonymous> (/home/ue/protectonce/DMLS/node_modules/@serverless/compose/src/ComponentsService.js:161:19)
+    at Object.<anonymous> (/home/ue/protectonce/DMLS/node_modules/traverse/index.js:245:13)
+    at walker (/home/ue/protectonce/DMLS/node_modules/traverse/index.js:150:16)
+    at /home/ue/protectonce/DMLS/node_modules/traverse/index.js:171:17
+    at Array.forEach (<anonymous>)
+    at forEach (/home/ue/protectonce/DMLS/node_modules/traverse/index.js:19:30)
+    at walker (/home/ue/protectonce/DMLS/node_modules/traverse/index.js:166:4)
+    at /home/ue/protectonce/DMLS/node_modules/traverse/index.js:171:17
+    at Array.forEach (<anonymous>)
+    at forEach (/home/ue/protectonce/DMLS/node_modules/traverse/index.js:19:30)
 
+Verbose logs are available in ".serverless/compose.log"
