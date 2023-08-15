@@ -14,11 +14,23 @@ provider:
     restApiRootResourceId: ${self:custom.sharedGWRootResourceId}
 
 functions:
-  function1:
-    handler: index.handler
+  handler1:
+    handler: index.handler1
     events:
       - http:
-          path: serviceone/list
+          path: serviceone/list1
+          method: get
+  handler2:
+    handler: index.handler2
+    events:
+      - http:
+          path: serviceone/list2
+          method: get
+  handler3:
+    handler: index.handler3
+    events:
+      - http:
+          path: serviceone/list3
           method: get
 
 custom:

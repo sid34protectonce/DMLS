@@ -7,10 +7,10 @@ services:
     path: serviceone
     dependsOn: shared-gateway
 
-  servicetwo:
-    path: servicetwo
-    dependsOn: shared-gateway
+  # servicetwo:
+  #   path: servicetwo
+  #   dependsOn: shared-gateway
 
-  servicethree:
-    path: servicethree
-    dependsOn: shared-gateway
+  # servicethree:
+  #   path: servicethree
+  #   dependsOn: shared-gateway
